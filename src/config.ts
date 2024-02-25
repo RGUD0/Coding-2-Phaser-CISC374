@@ -9,6 +9,8 @@ export const CONFIG = {
     title: "My Untitled Phaser 3 Game",
     version: "0.0.1",
     type: Phaser.AUTO,
+    width: 800,
+    height: 600,
     backgroundColor: "#ffffff",
     scale: {
         parent: "phaser-game",
@@ -21,7 +23,7 @@ export const CONFIG = {
     physics: {
         default: "arcade",
         arcade: {
-            debug: false,
+            debug: true,
             gravity: { y: 300 },
         },
     },
