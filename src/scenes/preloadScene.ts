@@ -7,8 +7,7 @@ export default class PreloadScene extends Phaser.Scene {
     }
 
     preload() {
-        //this.load.image("phaser-logo", "assets/img/phaser-logo.png");
-        this.load.image("sky", "assets/skys.png");
+        this.load.image("sky", "assets/sky.png");
         this.load.image("ground", "assets/platform.png");
         this.load.image("star", "assets/star.png");
         this.load.image("bomb", "assets/bomb.png");
@@ -19,7 +18,7 @@ export default class PreloadScene extends Phaser.Scene {
     }
 
     create() {
-        this.scene.start("MainScene");
+        //this.scene.start("MainScene");
         this.add.image(400, 300, "sky");
 
         this.platforms = this.physics.add.staticGroup();
