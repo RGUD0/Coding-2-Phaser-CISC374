@@ -117,16 +117,7 @@ export default class PreloadScene extends Phaser.Scene {
         );
     }
 
-    private handleHitBomb(
-        player:
-            | Phaser.GameObjects.GameObject
-            | Phaser.Types.Physics.Arcade.GameObjectWithBody
-            | Phaser.Tilemaps.Tile,
-        b:
-            | Phaser.GameObjects.GameObject
-            | Phaser.Types.Physics.Arcade.GameObjectWithBody
-            | Phaser.Tilemaps.Tile
-    ) {
+    private handleHitBomb() {
         this.physics.pause();
         this.player?.setTint(0xff0000);
         this.player?.anims.play("turn");
