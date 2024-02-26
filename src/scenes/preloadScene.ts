@@ -20,7 +20,7 @@ export default class PreloadScene extends Phaser.Scene {
 
     create() {
         //this.scene.start("MainScene");
-
+        this.scene.start("PreloadScene");
         this.add.image(400, 300, "sky");
 
         this.platforms = this.physics.add.staticGroup();
@@ -35,7 +35,5 @@ export default class PreloadScene extends Phaser.Scene {
         this.platforms.create(600, 400, "ground");
         this.platforms.create(50, 250, "ground");
         this.platforms.create(750, 220, "ground");
-
-        this.scene.start("PreloadScene");
     }
 }
